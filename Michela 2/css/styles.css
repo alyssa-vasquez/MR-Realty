@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,.6);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.top {
+    position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.logo {
+    width: 80%;
+    padding: 5px 0px 0px 5px; 
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  font-size: 18px;
+    
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #083880;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgba(255,255,255,.6);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+/*PROPERTIES SECTION*/
+
+.middleProps {
+    padding-top: 25px;
+}
+
+h1 {
+ font-family: "Avenir Next";
+ font-size: 32px;
+ color: #083880;
+ overflow: hidden;
+ text-align: center;
+    padding-bottom: 10px;
+}
+
+h1:before,
+h1:after {
+ background-color: #083880;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 20%;
+}
+
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+.img-fluid {
+    padding: 10px 3% 10px 3%;
+    position: relative;
+}
+
+.address {
+    color: white;
+    font-family: "Avenir Next";
+    font-size: 18px;
+    position: absolute;
+    padding-left: 6%;
+    top: 6%;
+}
+
+.price {
+    color: white;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    position: absolute;
+    right: 8%;
+    top: 6%;
+}
+
+.specs {
+    color: white;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    position: absolute;
+    right: 8%;
+    top: 12%;
+}
+
+.spacer {
+    padding: 0 2px 0 2px;
+}
+
+
+
+
+
+
+/*ABOUT SECTION*/
+
+.aboutSection {
+    background-color: #083880;
+}
+
+.aboutSection h1{
+    color: white;
+    padding-top: 25px;
+}
+
+.aboutSection h1:before,
+.aboutSection h1:after {
+ background-color: white;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 20%;
+}
+
+.headshot {
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutPic {
+    padding-bottom: 25px;
+}
+
+p {
+    color: white;
+    padding: 0px 5% 25px 5%;
+}
+
+.aboutBtn {
+   text-align:center;
+    padding-bottom: 25px;
+}
+
+.button {
+    background-color: rgba(255,255,255,.3);
+    width: 33%;
+    color: white;
+    border: 0;
+    height: 25px;
+    border-radius: .25rem;
+    height: 35px;
+    width: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACT*/
+
+.contactSection {
+    background-image: url("../assets/M1.jpg");
+}
+
+.contactForm {
+    padding-top: 25px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Remove outline of all elements on focus */
+  *:focus {
+  	outline: 0;
+  }
+
+  /* Add styles to 'label' selector */
+  label {
+    color: white;
+    font-family: "Avenir Next";
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  /* Add styles to 'input' and 'textarea' selectors */
+  input[type=text],input[type=email],input[type=telephone], textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255,255,255,.7);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: "Avenir Next";
+    font-size: 16px;
+  }
+
+  /* Add styles to show 'focus' of selector */
+  input[type=telephone]:focus, input[type=text]:focus,input[type=email]:focus, textarea:focus {
+  	border: 1px solid white;
+  }
+
+
+  /* Style 'hover' property */
+  input[type=submit]:hover {
+  	background: white;
+  }
+
+
+.formBtn {
+   text-align:center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer li {
+    display: inline;
+}
+
+.social {
+    height: 30px;
+    width: 30px;
+    margin: 7px;
+}
+
+.handle {
+    color: #083880;
+    font-family: "Avenir Next";
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.copyright {
+    color: #5A5A5A;
+    font-family: "Avenir Next";
+    font-size: 12px;
+    padding: 5px;
+}

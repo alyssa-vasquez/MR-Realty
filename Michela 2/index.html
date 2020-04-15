@@ -1,0 +1,134 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Michela Reouveni Realty</title>
+  <meta name="description" content="The HTML5 Michela">
+  <meta name="author" content="SitePoint">
+
+
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    
+    <header class="header">
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          <img class="logo" src="assets/horLogo.png">
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="props.html">Properties</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" >Contact</a>
+      </div>
+    </div>
+    </header>
+    
+    
+    <section class = "top">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="/assets/Home.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/assets/Home.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="/assets/Home.jpg" alt="Third slide">
+            </div>
+          </div>
+        </div>
+    </section>
+    
+
+    <section class = "middleProps">
+        <h1>Properties</h1>
+        <div class="row">
+          <div class="col-sm-4">
+              <img class="img-fluid" src="/assets/Home.jpg">
+              <div class="address">5106 Meadows Del Mar</div>
+              <div class="price">&#36;100/Month</div>
+              <div class="specs">6 Bed
+                  <span class="spacer">|</span>
+                  7 Bath
+                  <span class="spacer">|</span>
+                  4,000 Sq Ft</div>
+            </div>
+          <div class="col-sm-4">
+              <img class="img-fluid" src="/assets/Home.jpg">
+            </div>
+          <div class="col-sm-4">
+              <img class="img-fluid" src="/assets/Home.jpg">
+            </div>
+        </div>
+  </section>
+    
+    
+    <section class = "aboutSection">
+        <h1>About Me</h1>
+        <div class="aboutPic"><img class="headshot" src="/assets/mix.jpg"></div>
+        <div class="bio"><p>Ipsum Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+        <div class="aboutBtn"><button class="button">Read More</button></div>
+    </section> 
+    
+    
+    <section class="contactSection">
+      <div class="contactForm">
+        <h1>Contact</h1>
+        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+        <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+        <label for="email-address">Email Address</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+        <label for="telephone">Telephone Number (Optional)</label>
+        <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+        <label for="complaint">Message</label>
+        <textarea rows="6" name="complaint" id="complaint" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+    </fieldset>
+        <div class="formBtn"><button class="button" input type="submit" value="Send">Send</button></div>
+    </form>
+   </div>
+</section>
+    
+<footer>
+    <div class="handle">&#64;michelareouvenirealty</div>
+        <ul>
+            <li><a href="contact.html">
+                <img class="social insta" src="/assets/insta.png"></a></li>
+            <li><a href="contact.html">
+                <img class="social fb" src="/assets/facebook.png"></a></li>
+            <li><a href="contact.html">
+                <img class="social email" src="/assets/email.png"></a></li>
+        </ul>
+    <div class="copyright">Copyright &#169; 2020 Michela Reouveni<br>
+        Custom website by alyssavasquez.design
+    </div>
+</footer>
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
