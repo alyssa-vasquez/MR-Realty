@@ -2,7 +2,22 @@
   box-sizing: border-box;
 }
 
-.nav {
+html {
+    font-family: "Avenir Next";
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    padding: 20px 0 20px 0;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+
+.nav1 {
     height: 50px;
     width: 100%;
     background-color: rgba(255,255,255,.6);
@@ -15,8 +30,9 @@
     position: relative;
 }
 
-.nav > .nav-header {
+.nav1 > .nav-header {
   display: inline;
+    line-height: 50px;
 }
 
 .logo {
@@ -24,58 +40,61 @@
     padding: 5px 0px 0px 5px; 
 }
 
-.nav > .nav-header > .nav-title {
+.nav1 > .nav-header > .nav-title {
   display: inline-block;
 }
 
-.nav > .nav-btn {
+.nav1 > .nav-btn {
   display: none;
+    float: right;
 }
 
-.nav > .nav-links {
-  display: inline;
-  font-size: 18px;
-    
+.nav1 > .nav-links {
+  font-size: 1.8rem;
+    display: inline;
+    float: right;
 }
 
-.nav > .nav-links > a {
+.nav1 > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 0 10px 0 10px;
   text-decoration: none;
   color: #083880;
+    text-align: center;
+    line-height: 50px;
 }
 
-.nav > .nav-links > a:hover {
+.nav1 > .nav-links > a:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.nav > #nav-check {
+.nav1 > #nav-check {
   display: none;
 }
 
-@media (max-width:600px) {
-  .nav > .nav-btn {
+@media (max-width:768px) {
+  .nav1 > .nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
-  .nav > .nav-btn > label {
+  .nav1 > .nav-btn > label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+  .nav1 > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.2);
   }
-  .nav > .nav-btn > label > span {
+  .nav1 > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
   }
-  .nav > .nav-links {
+  .nav1 > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
@@ -86,21 +105,19 @@
     top: 50px;
     left: 0px;
   }
-  .nav > .nav-links > a {
+  .nav1 > .nav-links > a {
     display: block;
     width: 100%;
+    font-weight: 500;
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
+  .nav1 > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
-  .nav > #nav-check:checked ~ .nav-links {
+  .nav1 > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
 }
-
-
-
 
 
 
@@ -115,11 +132,9 @@
 
 h1 {
  font-family: "Avenir Next";
- font-size: 32px;
  color: #083880;
  overflow: hidden;
  text-align: center;
-    padding-bottom: 10px;
 }
 
 h1:before,
@@ -144,14 +159,14 @@ h1:after {
 }
 
 .img-fluid {
-    padding: 10px 3% 10px 3%;
+    padding: 10px 20px 10px 20px;
     position: relative;
 }
 
 .address {
     color: white;
     font-family: "Avenir Next";
-    font-size: 18px;
+    font-size: 1.8rem;
     position: absolute;
     padding-left: 6%;
     top: 6%;
@@ -160,7 +175,7 @@ h1:after {
 .price {
     color: white;
     font-family: "Avenir Next";
-    font-size: 16px;
+    font-size: 1.6rem;
     position: absolute;
     right: 8%;
     top: 6%;
@@ -169,7 +184,7 @@ h1:after {
 .specs {
     color: white;
     font-family: "Avenir Next";
-    font-size: 16px;
+    font-size: 1.6rem;
     position: absolute;
     right: 8%;
     top: 12%;
@@ -190,9 +205,12 @@ h1:after {
     background-color: #083880;
 }
 
+.aboutDesktop {
+    display: none;
+}
+
 .aboutSection h1{
     color: white;
-    padding-top: 25px;
 }
 
 .aboutSection h1:before,
@@ -225,6 +243,7 @@ p {
 .aboutBtn {
    text-align:center;
     padding-bottom: 25px;
+    font-size: 1.6rem;
 }
 
 .button {
@@ -236,6 +255,7 @@ p {
     border-radius: .25rem;
     height: 35px;
     width: 35%;
+    font-size: 1.6rem;
 }
 
 
@@ -271,7 +291,7 @@ p {
   label {
     color: white;
     font-family: "Avenir Next";
-    font-size: 16px;
+    font-size: 1.6rem;
     padding-top: 10px;
   }
 
@@ -285,7 +305,7 @@ p {
     box-sizing: border-box;
     resize: vertical;
     font-family: "Avenir Next";
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   /* Add styles to show 'focus' of selector */
@@ -311,12 +331,11 @@ p {
 
 
 
-
-
 /*FOOTER*/
 
 footer {
     text-align: center;
+    padding: 10px 0 5px 0;
 }
 
 footer ul {
@@ -336,13 +355,102 @@ footer li {
 .handle {
     color: #083880;
     font-family: "Avenir Next";
-    font-size: 15px;
-    padding-top: 5px;
+    font-size: 1.5rem;
 }
 
 .copyright {
     color: #5A5A5A;
     font-family: "Avenir Next";
-    font-size: 12px;
+    font-size: 1.3rem;
     padding: 5px;
+}
+
+
+
+
+
+
+
+/*MEDIA Q*/
+
+@media (min-width:769px) {
+    
+/*    PROPERTIES*/
+    
+    .col-md-4 {
+        padding: 0;
+    }
+    
+    .img-fluid {
+        padding: 0 7.5px  7.5px;
+    }
+    
+    .row {
+        margin: 0;
+        padding: 20px 7.5px 20px 7.5px;
+    }
+
+    .address {
+    padding-left: 5%;
+    top: 5px;;
+}
+
+    .price {
+        top: 25px;
+        left: 0;
+        padding-left: 5%;
+    }
+
+    .specs {
+        top: 43px;
+        left: 0;
+        padding-left: 5%;
+    }
+
+    .spacer {
+        padding: 0 2px 0 2px;
+    }
+    
+    
+    
+    
+    
+    
+/*    ABOUT SECTION*/
+    
+    
+    .aboutMobile {
+    display: none;
+}
+    
+    .aboutDesktop{
+        display: initial;
+    }
+    
+    .aboutSection {
+        display: flex;
+    }
+    
+    .aboutPic {
+        flex: 25%;
+        padding-left: 5%;
+    }
+    
+    .bio {
+        flex: 70%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1025px) {
+    
+    
+    
 }

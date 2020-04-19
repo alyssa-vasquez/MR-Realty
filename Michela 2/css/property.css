@@ -1,0 +1,173 @@
+.carouselContainer {
+    margin-bottom: 100px;
+    position: relative;
+    top: 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%
+}
+
+#custCarousel .carousel-indicators {
+    position: static;
+    margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+    width: 150px;
+}
+
+#custCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+    opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+    opacity: 0.75
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel .carousel-control-prev-icon {
+    background-image: url(/assets/left.png);
+    margin-right: 10px;
+}
+
+.carousel .carousel-control-next-icon {
+    background-image: url(/assets/right.png);
+    margin-left: 10px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: 30%;
+    bottom: 30%;
+}
+
+
+/*LISTING SECTION*/
+
+.propAddress {
+    text-align: center;
+    color: #083880;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.propAddress h1 {
+    padding-bottom: 0px;
+}
+
+.stats {
+    text-align: center;
+}
+
+.stats h2 {
+    padding: 10px 0 5px 0;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.description p {
+    color: #5A5A5A;
+    padding-top: 25px;
+}
+
+.listingBtn {
+   text-align: center;
+    padding-bottom: 25px;
+}
+
+.listing .button {
+    background-color: #083880;
+    width: 33%;
+    color: white;
+    border: 0;
+    height: 25px;
+    border-radius: .25rem;
+    height: 35px;
+    width: 35%;
+}
+
+
+
+
+
+
+/*MAP SECTION*/
+
+.map {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+
+.map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+
+
+
+/*FOOTER*/
+
+footer {
+    padding-top: 25px;
+}
+
+
+
+
+
+@media (min-width:769px) {
+    
+    
+    .carouselContainer > .row {
+        padding: 0px;;
+    }
+    
+    .col-md-12 {
+        padding: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1025px) {
+    
+/*    LISTING SECTION*/
+    
+    .description {
+        padding: 0 10% 0 10%;
+    }
+    
+    
+    
+/*    MAP SECTION*/
+    
+    .mapSection {
+        padding: 0 5% 0 5%;
+    }
+    
+}
