@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 html {
     font-family: "Avenir Next";
     font-size: 10px;
@@ -10,15 +15,17 @@ html {
 h1 {
     font-size: 2.2rem;
     padding: 20px 0 20px 0;
+    margin: 0;
 }
 
 p {
     font-size: 1.6rem;
+    margin: 0;
 }
 
 
 .nav1 {
-    height: 50px;
+    height: 5rem;
     width: 100%;
     background-color: rgba(255,255,255,.6);
     position: absolute;
@@ -62,6 +69,7 @@ p {
   color: #083880;
     text-align: center;
     line-height: 50px;
+    font-weight: 300;
 }
 
 .nav1 > .nav-links > a:hover {
@@ -71,6 +79,10 @@ p {
 .nav1 > #nav-check {
   display: none;
 }
+
+ #scroll {
+   scroll-behavior: smooth;
+  }
 
 @media (max-width:768px) {
   .nav1 > .nav-btn {
@@ -108,7 +120,7 @@ p {
   .nav1 > .nav-links > a {
     display: block;
     width: 100%;
-    font-weight: 500;
+    font-weight: 400;
   }
   .nav1 > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -128,6 +140,7 @@ p {
 
 .middleProps {
     padding-top: 25px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -181,14 +194,6 @@ h1:after {
     top: 6%;
 }
 
-.specs {
-    color: white;
-    font-family: "Avenir Next";
-    font-size: 1.6rem;
-    position: absolute;
-    right: 8%;
-    top: 12%;
-}
 
 .spacer {
     padding: 0 2px 0 2px;
@@ -371,9 +376,19 @@ footer li {
 
 
 
-/*MEDIA Q*/
+/*Medium MEDIA Q*/
 
 @media (min-width:769px) {
+    
+    .nav-links {
+         padding-right: 10px;
+    }
+    
+    h1 {
+        font-size: 2.4rem;
+        margin: 0;
+    }
+    
     
 /*    PROPERTIES*/
     
@@ -381,8 +396,13 @@ footer li {
         padding: 0;
     }
     
+    .middleProps {
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+    }
+    
     .img-fluid {
-        padding: 0 7.5px  7.5px;
+        padding: 0 7.5px 0 7.5px;
     }
     
     .row {
@@ -391,21 +411,19 @@ footer li {
     }
 
     .address {
-    padding-left: 5%;
-    top: 5px;;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding-left: 5%;
+        top: 1rem;
 }
 
     .price {
-        top: 25px;
+        font-size: 1.4rem;
+        top: 3rem;
         left: 0;
         padding-left: 5%;
     }
 
-    .specs {
-        top: 43px;
-        left: 0;
-        padding-left: 5%;
-    }
 
     .spacer {
         padding: 0 2px 0 2px;
@@ -418,6 +436,9 @@ footer li {
     
 /*    ABOUT SECTION*/
     
+    .aboutSection {
+        padding: 35px 5% 35px 5%;
+    }
     
     .aboutMobile {
     display: none;
@@ -427,18 +448,36 @@ footer li {
         display: initial;
     }
     
+
     .aboutSection {
         display: flex;
     }
     
-    .aboutPic {
-        flex: 25%;
-        padding-left: 5%;
-    }
     
     .bio {
         flex: 70%;
     }
+    
+    .bio p {
+        padding: 0px 0 25px 8.75%;
+    }
+    
+    .aboutPic {
+        flex: 30%;
+        padding: 0;
+    }
+    
+    
+    
+    
+    
+    
+        /*CONTACT FORM*/
+    
+    .contactForm {
+    width: 75%;
+ }
+    
     
 }
 
@@ -449,8 +488,41 @@ footer li {
 
 
 
-@media screen and (min-width: 1025px) {
+
+
+
+
+
+
+/*Large Media Q*/
+
+@media screen and (min-width: 1200px) {
     
+/*    ABOUT*/
+    
+    .headshot {
+    height: 500px;
+}
+    
+    .bio {
+        padding-left: 
+    }
+    
+    
+    .address {
+        font-size: 1.8rem;
+    }
+    
+     .price {
+        font-size: 1.6rem;
+    }
+    
+    
+    
+    
+    
+    
+
     
     
 }

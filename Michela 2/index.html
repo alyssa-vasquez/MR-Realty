@@ -10,9 +10,23 @@
 
 
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/reset.css">
+
+    
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+<!--Slick-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/property.css">
 
 </head>
 
@@ -35,9 +49,9 @@
       </div>
 
       <div class="nav-links">
-        <a href="property1.html">Properties</a>
+        <a href="properties.html">Properties</a>
         <a href="about.html">About</a>
-        <a href="contact.html" >Contact</a>
+        <a href="#scroll">Contact</a>
       </div>
     </div>
     </header>
@@ -63,22 +77,53 @@
     <section class = "middleProps">
         <h1>Properties</h1>
         <div class="row">
+          
+            <div class="col-md-4">
+              <a href="N-Stanley-Ave.html">
+                <img class="img-fluid" src="/assets/Home.jpg">
+              </a>
+              <div class="address">534 N Stanley Ave</div>
+                
+              <div class="price">Sold
+                  <span class="spacer">|     
+                </span>&#36;3,000,000   
+              <br>4 Bed
+                  <span class="spacer">|</span>
+                  5 Bath
+                  <span class="spacer">|</span>
+                  4,305 Sq Ft
+                </div>
+            </div>
+            
+          <div class="col-md-4">
+            <a href="Wilshire-Blvd.html">
+              <img class="img-fluid" src="/assets/Home.jpg">
+            </a>
+              <div class="address">10727 Wilshire Blvd</div>
+              
+              <div class="price">Leased
+                  <span class="spacer">|     
+                </span>&#36;10,500/Month
+              <br>2 Bed
+                  <span class="spacer">|</span>
+                  3 Bath
+                  <span class="spacer">|</span>
+                  1,793 Sq Ft
+              </div>
+            </div>
+            
           <div class="col-md-4">
               <img class="img-fluid" src="/assets/Home.jpg">
               <div class="address">5106 Meadows Del Mar</div>
-              <div class="price">&#36;6,000/Month</div>
-              <div class="specs">6 Bed
+              <div class="price">&#36;6,000/Month
+              <br>6 Bed
                   <span class="spacer">|</span>
                   7 Bath
                   <span class="spacer">|</span>
-                  4,000 Sq Ft</div>
+                  4,000 Sq Ft
+              </div>
             </div>
-          <div class="col-md-4">
-              <img class="img-fluid" src="/assets/Home.jpg">
-            </div>
-          <div class="col-md-4">
-              <img class="img-fluid" src="/assets/Home.jpg">
-            </div>
+              
         </div>
   </section>
     
@@ -88,13 +133,14 @@
         <div class="aboutPic"><img class="headshot" src="/assets/mix.jpg"></div>
         <div class="bio">
             <div class="aboutDesktop"><h1>About Me</h1></div>
-            <p>Ipsum Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>I have always loved real estate and architecture. My parents were born abroad, and I have been privileged to learn about different parts of the world. I was born in South Africa and fortunate enough to travel around the world. I began to appreciate all types of architecture in all the new places I visited. I grew up going to schools focused on arts and creativity and earned a degree in Business Administration with an emphasis in Real Estate and Entrepreneurship. Surrounding myself with people who have similar passions really inspired me to continue my growth in design and Real Estate. Through experience and knowledge, I understand that beautiful architecture is not all it takes to make a house perfect - every family isn’t looking for the same thing.  Being able to understand my client’s needs provide my clients with unparalled service gives me immense joy. Living in Los Angeles the past eight years, I have been fortunate enough to work alongside Los Angeles’ top agent Joe Babajian on various projects from Bel Air, Beverly Hills the Hollywood Hills as well as the premiere West Side of Los Angeles. I have assisted him on many deals and he has mentored me on every facet of real estate. I have experienced the different pockets of what LA’s Real Estate market and has to offer and I am not intimidated by any situation.</p>
             <div class="aboutBtn"><button class="button">Read More</button></div>
         </div>
     </section> 
     
     
     <section class="contactSection">
+    <div id="scroll">
       <div class="contactForm">
         <h1>Contact</h1>
         <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
@@ -112,6 +158,7 @@
         <div class="formBtn"><button class="button" input type="submit" value="Send">Send</button></div>
     </form>
    </div>
+    </div>
 </section>
     
     <footer>
@@ -132,6 +179,19 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        setting-name: setting-value
+      });
+    });
+  </script>
     
 
 </body>
